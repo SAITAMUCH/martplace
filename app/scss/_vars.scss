@@ -1,1 +1,13 @@
 $text: #555555;
+$title: #f3f3f8;
+
+
+@mixin f500 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+}
+
+@mixin f700 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+}

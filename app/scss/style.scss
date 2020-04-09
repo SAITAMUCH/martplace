@@ -40,6 +40,7 @@
     }
   }
   a {
+    @include f500;
     text-transform: uppercase;
     font-size: 15px;
     color: #333333;
@@ -51,7 +52,6 @@
   form {
     position: relative;
     max-width: 360px;
-   
     input {
       display: block;
       width: 360px;
@@ -60,7 +60,8 @@
       border: 1px solid #d9dfe5;
       font-size: 15px;
       padding-left: 25px;
-      padding-right: 120px;
+      padding-right: 70px;
+      outline: none;
       &::placeholder {
         color: #898f96;
       }
@@ -74,9 +75,60 @@
       right: 0px;
       top: 0px;
       cursor: pointer;
+      outline: none;
     }
   }
 }
 
-
 // end header
+// start products
+
+.products {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 725px;
+}
+
+.products__inner {
+  padding: 180px 0 200px;
+  text-align: center;
+  &-title {
+    font-size: 60px;
+    line-height: 70px;
+    color: $title;
+    span {
+      display: block;
+      @include f700;
+    }
+  }
+  &-text {
+    margin-top: 50px;
+    margin-bottom: 70px;
+    font-size: 20px;
+    color: $title;
+    @include f500;
+  }
+  &-btn {
+    font-size: 16px;
+    button {
+      color: #fff;
+      height: 55px;
+      background-color: transparent;
+      padding: 13px 25px;
+      border-radius: 50px;
+      border: 1px solid #fff;
+      transition: all .3s;
+      & + button {
+        margin-left: 30px;
+      }
+      &:hover {
+        background-color: #fff;
+        color: #0674ec;
+        
+      }
+    }
+  }
+}
+
+// end products

@@ -3,6 +3,10 @@ $title: #f3f3f8;
 $blue: #0674ec;
 
 
+@mixin f300 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+}
 @mixin f500 {
     font-family: 'Quicksand', sans-serif;
     font-weight: 500;

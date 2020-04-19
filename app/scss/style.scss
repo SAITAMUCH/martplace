@@ -756,6 +756,7 @@
   }
 }
 
+
 // end followers
 
 // start info
@@ -790,19 +791,23 @@
   font-size: 48px;
 }
 
-.lnr-briefcase, .brief {
+.lnr-briefcase,
+.brief {
   color: #feb71d;
 }
 
-.lnr-cloud-download, .cloud {
+.lnr-cloud-download,
+.cloud {
   color: #58c9e9;
 }
 
-.lnr-smile, .smile {
+.lnr-smile,
+.smile {
   color: #77de51;
 }
 
-.lnr-users, .users {
+.lnr-users,
+.users {
   color: #ff6a6d;
 }
 
@@ -868,7 +873,7 @@
     color: #e5eafe;
   }
   .lnr-license {
-    color: $blue
+    color: $blue;
   }
   .lnr-magic-wand {
     color: #7f4ec2;
@@ -887,5 +892,54 @@
   }
 }
 
+// end advantages
+
+// start choose
+
+.choose {
+  display: flex;
+}
+
+.choose__item {
+  padding: 100px;
+  width: 960px;
+  height: 561px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  &-images {
+    height: 101px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 50px;
+  }
+  &-title {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 30px;
+  }
+  &-text {
+    color: #fff;
+    max-width: 580px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+  }
+  a {
+    background-color: #fff;
+    height: 56px;
+    padding: 12px 0;
+    outline: none;
+    text-align: center;
+    border-radius: 50px;
+    width: 190px;
+  }
+  .choose__button-blue {
+    color: $blue;
+  }
+  .choose__button-purple {
+    color: #7347c1;
+  }
+}
 
 // end advantages

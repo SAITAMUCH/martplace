@@ -14,6 +14,16 @@ $(function () {
         normalFill: "grey"
     });
 
+    $(".js-range-slider").ionRangeSlider({
+        type: "double",
+        grid: false,
+        min: 0,
+        max: 350,
+        from: 30,
+        to: 300,
+        prefix: "$"
+      });
+
     $(".followers__inner-box").slick({
         dots: false,
         slidesToShow: 3,
@@ -22,9 +32,26 @@ $(function () {
         nextArrow: '<div class="next"></div>',
     });
 
+    $('input, select').styler();
+
+    $('.grid').on('click', function () {
+        $('.product__item').removeClass('list');
+        $('.grid').addClass('active');
+        $('.list').removeClass('active');
+    });
+    $('.list').on('click', function () {
+        $('.product__item').addClass('list');
+        $('.list').addClass('active');
+        $('.grid').removeClass('active');
+    });
+
+    $('.aside__title').click(function(){
+        $(this).parent().children('.category__list, .filters__list, .price__list').slideToggle();
+        return false;
+       });
 
 
-    var mixer = mixitup('.products__inner-box');
+    var mixer = mixitup('.products__inner-box, .product-page__items');
 
 });
 

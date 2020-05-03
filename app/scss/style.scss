@@ -2396,33 +2396,51 @@
   }
   .single-aside__info-purchase {
     background-color: $blue;
+    cursor: pointer;
   }
   .single-aside__info-add {
     background-color: $purple;
+    cursor: pointer;
   }
   .single-aside__info-choose {
-    padding-left: 30px;
+    padding-left: 40px;
     margin-bottom: 30px;
-    cursor: pointer;
-    &.active {
-      span {
-        border: none;
-        background-image: url(../images/content/check-circle.png);
-        width: 20px;
-        height: 20px;
-      }
-    }
     & + .single-aside__info-choose {
       padding-top: 30px;
       border-top: 1px solid #ececec;
     }
-    span {
-      position: absolute;
-      left: -30px;
-      width: 18px;
-      height: 18px;
-      border-radius: 50px;
+    .jq-radio__div {
+      background-color: #fff;
+      width: 20px;
+      height: 20px;
+    }
+    .jq-radio {
+      &.checked {
+        border: none;
+      }
+      border-radius: 50%;
       border: 4px solid #e6e9ed;
+      cursor: pointer;
+      background-color: #fff;
+      width: 20px;
+      height: 20px;
+      margin-left: -40px;
+      margin-right: 20px;
+    }
+    .jq-radio.disabled {
+      background-color: #fff;
+    }
+    .jq-radio.checked .jq-radio__div {
+      background-image: url(../images/content/check-circle.png);
+      position: absolute;
+      z-index: 1;
+      width: 20px;
+      height: 20px;
+      margin: 0px 0 0 0px;
+      border-radius: 50%;
+      background-color: #fff;
+      box-shadow: none;
+      border: none;
     }
   }
   .single-aside__info-choose__title {

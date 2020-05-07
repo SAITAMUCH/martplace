@@ -50,10 +50,10 @@ $(function () {
         return false;
     });
 
-    $('.single__tabs .tab').on('click', function (event) {
+    $('.single__tabs .tab, .blog-tabs .tab').on('click', function (event) {
         var id = $(this).attr('data-id');
-        $('.single__tabs').find('.tab-item').removeClass('active-tab').hide();
-        $('.single__tabs .tabs').find('.tab').removeClass('active');
+        $('.single__tabs, .blog-tabs').find('.tab-item').removeClass('active-tab').hide();
+        $('.single__tabs .tabs, .blog-tabs .tabs').find('.tab').removeClass('active');
         $(this).addClass('active');
         $('#' + id).addClass('active-tab').fadeIn();
         return false;
@@ -66,7 +66,7 @@ $(function () {
     // });
 
 
-    var mixer = mixitup('.products__inner-box, .product-page__items');
+    var mixer = mixitup('.products__inner-box, .product-page__items, .blog__inner');
 
 });
 

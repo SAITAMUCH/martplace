@@ -59,14 +59,8 @@ $(function () {
         return false;
     });
 
-    // $('input').click(function(e) {
-    //     e.preventDefault();
-    //     $('input:checkbox').attr('disabled', true)
-    //         .trigger('refresh');
-    // });
-
-
     var mixer = mixitup('.products__inner-box, .product-page__items, .blog__inner');
 
 });
 
+  
